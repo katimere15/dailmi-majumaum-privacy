@@ -77,14 +77,14 @@
 <main>
   <header>
     <h1>마주마음 개인정보처리방침</h1>
-    <p class="meta">운영자: Dailmi · 앱: 마주마음(Majumaum) · Android 패키지: <code>com.dailmi.majumaum</code><br>시행일: 2026년 10월 1일 · 최종 수정일: 2026년 10월 1일</p>
+    <p class="meta">운영자: Dailmi · 앱: 마주마음(Majumaum) · Android 패키지: <code>com.dailmi.majumaum</code><br>시행일: 2026년 10월 1일 · 최종 수정일: 2026년 10월 2일</p>
     <nav class="languages" aria-label="언어 선택"><a href="#korean">한국어</a><a href="#english">English</a></nav>
   </header>
 
   <div class="notice">
     <strong>한눈에 보기</strong>
     <p><span class="badge">개인 배려카드는 기기 우선 저장</span><span class="badge">공유 데이터는 Firebase 저장</span><span class="badge">광고·분석 SDK 없음</span></p>
-    <p>개인 배려카드의 제목·메모·상기 설정은 마주마음 서버로 전송하지 않습니다. 연인 연결 뒤 보낸 마음카드, 후보 날짜, 공유 일정과 준비 체크리스트는 두 사람이 함께 사용하도록 서버에 저장합니다. 공유 데이터는 전송 및 저장 과정에서 암호화되지만 현재 종단간 암호화 방식은 아닙니다.</p>
+    <p>개인 배려카드의 제목·메모·상기 설정은 마주마음 서버로 전송하지 않습니다. 연인 연결 뒤 보낸 마음카드와 답변, 공유 일정·기념일과 준비 체크리스트는 두 사람이 함께 사용하도록 서버에 저장합니다. 공유 데이터는 전송 및 저장 과정에서 암호화되지만 현재 종단간 암호화 방식은 아닙니다.</p>
     <p>계정을 삭제하면 프로필과 등록 기기 데이터는 운영 데이터베이스에서 즉시 삭제되고, 연결된 두 사람의 공유 데이터는 접근이 즉시 중단된 뒤 7일 후 삭제됩니다. 데이터 내보내기 ZIP은 암호화되지 않으므로 저장·공유 위치를 주의해서 선택해야 합니다.</p>
   </div>
 
@@ -104,8 +104,8 @@
           <tr><td>마주마음 프로필</td><td>별명, 계정 생성·수정 시각, 현재 커플 연결 ID</td><td>연인 연결, 상대 표시명 제공과 서비스 상태 유지</td><td>별명은 사용자가 입력. 계정 기반 기능 이용에 필수</td></tr>
           <tr><td>개인 배려카드</td><td>분류, 제목, 메모, 만든·수정한 시각, 다시 떠올릴 시점과 1회·주간·월간·연간 반복 설정</td><td>작성자 개인의 기억 보조와 로컬 알림</td><td>사용자가 선택 입력. 앱 전용 저장소에 보관하며 마주마음 서버로 전송하지 않음</td></tr>
           <tr><td>커플 연결·초대</td><td>두 사용자의 UID와 별명, 연결 상태·시각, 원문 초대 코드의 비밀값 결합 해시, 초대 생성자, 만료·사용 시각과 시도 횟수</td><td>정확히 두 사람 연결, 24시간·1회용 초대 검증과 재연결 제어</td><td>초대 생성·입력 때 처리. 공유 기능 이용 시 필요</td></tr>
-          <tr><td>마음카드·날짜 합의</td><td>발신·수신자 UID와 별명, 카드 문구, 최대 3개 후보 날짜, 생성·공개·응답·확정 시각, 수락·대체 제안·보류·거절 상태와 대체 날짜</td><td>마음카드 전달, 긁어보기 화면, 응답과 날짜 합의</td><td>사용자가 작성·응답. 공유 기능 이용 시 선택</td></tr>
-          <tr><td>공유 일정·준비</td><td>일정 제목, 날짜·시각, 사용자가 직접 입력한 장소 문구, 메모, 상태, 작성자, 준비 항목·담당자·완료 여부와 관련 시각</td><td>합의형 공유 캘린더와 준비 체크리스트 제공</td><td>사용자가 작성·수정. 공유 기능 이용 시 선택. 기기 위치정보는 수집하지 않음</td></tr>
+          <tr><td>마음카드·응답</td><td>발신·수신자 UID와 별명, 카드 문구, 발신자가 정한 최대 3개 답변 버튼과 수신자의 선택, 생성·공개·응답 시각. 기존 카드의 후보·대체 날짜와 응답 상태</td><td>마음카드 전달, 긁어보기 화면과 응답 제공</td><td>사용자가 작성·응답. 공유 기능 이용 시 선택</td></tr>
+          <tr><td>공유 일정·기념일·준비</td><td>일정 제목, 날짜·시각, 사용자가 직접 입력한 장소 문구, 메모, 상태, 작성자, 기념일 이름·기준 날짜·메모, 준비 항목·담당자·완료 여부와 관련 시각</td><td>합의형 공유 캘린더, 매년 반복 기념일과 준비 체크리스트 제공</td><td>사용자가 작성·수정. 공유 기능 이용 시 선택. 기기 위치정보는 수집하지 않음</td></tr>
           <tr><td>안전 설정</td><td>마음카드 수신 중지 여부, 차단한 사용자 UID와 당시 별명, 연결 해제·삭제 예약 시각</td><td>수신 제어, 차단과 연결 종료, 공유 데이터 삭제</td><td>사용자의 설정·차단·연결 해제 동작으로 수집</td></tr>
           <tr><td>푸시·앱 무결성</td><td>FCM 등록 토큰과 Firebase 설치 식별자, 플랫폼(Android), App Check 토큰과 Play Integrity 검증 자료</td><td>일반 문구 푸시 전달, 위조 앱·비정상 요청 방지</td><td>로그인 뒤 자동 처리. 알림 표시 권한은 사용자가 Android 설정에서 거부·변경 가능</td></tr>
           <tr><td>서비스 기술 정보</td><td>IP 주소, 사용자 에이전트, 앱 ID·버전, 요청 시각, 서버 함수 요청·오류와 보안 로그</td><td>통신, 장애 대응, 보안과 부정 이용 방지</td><td>Firebase·Google Cloud 이용 과정에서 자동 생성</td></tr>
@@ -127,7 +127,7 @@
       <p>마주마음은 사용자가 직접 선택한 한 명의 연인과 공유 기능을 제공하기 위해 다음 정보를 그 상대에게 공개합니다.</p>
       <div class="scroll"><table>
         <thead><tr><th>받는 사람</th><th>공개 항목</th><th>목적</th><th>보유·이용 기간</th></tr></thead>
-        <tbody><tr><td>사용자가 초대하거나 초대를 수락해 연결한 연인 1명</td><td>별명과 연결 상태, 보낸 마음카드 문구·후보 날짜·공개 및 응답 상태, 확정된 공유 일정, 장소·메모와 준비 체크리스트</td><td>두 사람의 마음 표현, 날짜 합의, 공동 준비와 일정 실행</td><td>앱에서 연결되어 있는 동안. 연결 종료 시 즉시 접근 중단하며 서버 공유 데이터는 7일 후 삭제</td></tr></tbody>
+        <tbody><tr><td>사용자가 초대하거나 초대를 수락해 연결한 연인 1명</td><td>별명과 연결 상태, 보낸 마음카드 문구·답변 버튼·선택·공개 및 응답 상태, 공유 일정과 기념일, 장소·메모와 준비 체크리스트</td><td>두 사람의 마음 표현, 응답, 공동 준비와 일정·기념일 관리</td><td>앱에서 연결되어 있는 동안. 연결 종료 시 즉시 접근 중단하며 서버 공유 데이터는 7일 후 삭제</td></tr></tbody>
       </table></div>
       <p>마음카드 문구는 상대가 긁기 동작을 하기 전부터 전달을 위해 서버와 상대 앱에 처리될 수 있고, 긁기 동작은 화면에서 내용을 공개하는 사용자 경험입니다. 개인 배려카드 원문과 개인 알림은 연인에게 보내지 않습니다.</p>
       <p>법령에 특별한 규정이 있거나 수사기관·법원이 적법한 절차에 따라 요구하는 경우에는 필요한 범위에서 정보를 제공할 수 있습니다. 운영자는 개인정보를 판매하지 않습니다.</p>
@@ -166,7 +166,7 @@
         <thead><tr><th>정보</th><th>보유 기간</th><th>파기 방법</th></tr></thead>
         <tbody>
           <tr><td>프로필·안전 설정·서버 기기 토큰</td><td>계정 삭제 때까지. 차단 목록은 사용자가 차단을 해제하거나 계정을 삭제할 때까지</td><td>Firestore 문서와 하위 기기 문서 삭제</td></tr>
-          <tr><td>활성 커플 연결, 마음카드, 공유 일정·체크리스트</td><td>연결 해제·차단·계정 삭제 시 접근을 즉시 차단하고 7일간 삭제 대기 후 운영 데이터베이스에서 삭제</td><td>예약 서버 작업으로 커플 문서와 하위 공유 문서를 재귀 삭제</td></tr>
+          <tr><td>활성 커플 연결, 마음카드, 공유 일정·기념일·체크리스트</td><td>연결 해제·차단·계정 삭제 시 접근을 즉시 차단하고 7일간 삭제 대기 후 운영 데이터베이스에서 삭제</td><td>예약 서버 작업으로 커플 문서와 하위 공유 문서를 재귀 삭제</td></tr>
           <tr><td>초대 기록</td><td>초대 코드는 24시간 또는 1회 사용 뒤 더 이상 사용할 수 없음. 현재 초대 레코드는 생성한 사용자의 계정 삭제 때까지 보관</td><td>계정 삭제 시 해당 사용자가 생성한 초대 문서 삭제. 원문 코드는 저장하지 않고 비밀값을 결합한 해시만 저장</td></tr>
           <tr><td>기기 내 개인 배려카드·공유 캐시·온보딩 상태</td><td>사용자가 개별 삭제, 연결 해제, 계정 삭제 또는 앱 데이터 삭제·앱 제거를 할 때까지. Android 백업에 남은 사본은 백업 제공자의 정책을 따름</td><td>앱 전용 저장소의 값과 예약 알림 삭제</td></tr>
           <tr><td>내보내기 임시 ZIP</td><td>공유 메뉴 호출을 위해 앱 캐시에 생성되며 운영체제 또는 앱 캐시 정리 때까지 남을 수 있음. 사용자가 외부에 저장·전송한 사본은 선택한 위치에 남음</td><td>운영체제 캐시 정리 또는 사용자가 저장·공유 위치에서 직접 삭제</td></tr>
@@ -180,7 +180,7 @@
     <section>
       <h2>8. 데이터 내보내기와 계정 삭제</h2>
       <h3>데이터 내보내기</h3>
-      <p>앱의 “데이터와 안전 → 데이터 내보내기”에서 개인 배려카드, 프로필과 현재 접근 가능한 마음카드·일정·체크리스트를 JSON과 CSV가 포함된 ZIP으로 만들 수 있습니다. 파일은 기기 임시 저장소에서 생성되고 Android 공유 메뉴로 전달되며 운영자는 내보낸 파일을 별도로 수신하지 않습니다.</p>
+      <p>앱의 “데이터와 안전 → 데이터 내보내기”에서 개인 배려카드, 프로필과 현재 접근 가능한 마음카드·일정·기념일·체크리스트를 JSON과 CSV가 포함된 ZIP으로 만들 수 있습니다. 파일은 기기 임시 저장소에서 생성되고 Android 공유 메뉴로 전달되며 운영자는 내보낸 파일을 별도로 수신하지 않습니다.</p>
       <p><strong>ZIP은 암호화되지 않습니다.</strong> 이메일, 클라우드 드라이브, 메신저 등 사용자가 선택한 외부 앱이나 저장소는 각자의 방침에 따라 파일을 처리합니다. 공유를 마친 뒤 앱 캐시와 외부 저장 위치의 사본을 직접 관리해 주세요.</p>
       <h3>계정 삭제</h3>
       <p>“데이터와 안전 → 계정 영구 삭제”에서 Google 재인증 후 삭제할 수 있습니다. 서버 프로필·등록 기기와 Firebase Authentication 계정은 삭제 요청 즉시 운영 시스템에서 삭제 절차를 시작합니다. 현재 연결은 즉시 종료되고 공유 데이터는 7일 후 삭제됩니다. 기기의 마주마음 로컬 데이터와 개인 알림도 지웁니다.</p>
@@ -250,7 +250,7 @@
   <div id="english" lang="en">
     <div class="notice plain">
       <strong>English summary</strong>
-      <p>Private care-card content and reminder settings are stored primarily on your device and are not sent to Majumaum servers. Heart cards, proposed dates, shared events, and preparation checklists are stored in Firebase so that the connected couple can use them together. Shared data is encrypted in transit and at rest by the provider, but it is not currently end-to-end encrypted. Exported ZIP files are not encrypted.</p>
+      <p>Private care-card content and reminder settings are stored primarily on your device and are not sent to Majumaum servers. Heart cards and responses, shared events, anniversaries, and preparation checklists are stored in Firebase so that the connected couple can use them together. Shared data is encrypted in transit and at rest by the provider, but it is not currently end-to-end encrypted. Exported ZIP files are not encrypted.</p>
     </div>
 
     <section>
@@ -265,8 +265,8 @@
         <li><strong>Profile:</strong> nickname, account timestamps, and current couple-connection ID.</li>
         <li><strong>Private care cards:</strong> category, title, note, timestamps, reminder time, and one-time, weekly, monthly, or yearly recurrence. These stay in app-private local storage and are not uploaded to Majumaum servers.</li>
         <li><strong>Connection and invitations:</strong> both users’ UIDs and nicknames, connection state and timestamps, a secret-peppered hash of the invitation code, creator, expiry, use time, and attempt count. The raw invitation code is not stored.</li>
-        <li><strong>Heart cards and date agreement:</strong> sender and recipient identifiers and names, message, up to three proposed dates, reveal and response status, alternative date, and relevant timestamps.</li>
-        <li><strong>Shared calendar and preparation:</strong> event title, date and time, text location entered by a user, note, status, creator, and checklist content, assignee, completion status, and timestamps. Majumaum does not collect device geolocation.</li>
+        <li><strong>Heart cards and responses:</strong> sender and recipient identifiers and names, message, up to three sender-defined response buttons, the recipient’s selection, reveal and response status, and relevant timestamps. Legacy cards may retain proposed or alternative dates and their response status.</li>
+        <li><strong>Shared calendar, anniversaries, and preparation:</strong> event title, date and time, text location entered by a user, note, status, creator, anniversary title, reference date and note, and checklist content, assignee, completion status, and timestamps. Majumaum does not collect device geolocation.</li>
         <li><strong>Safety settings:</strong> reception pause, blocked user ID and nickname, disconnection status, and scheduled deletion time.</li>
         <li><strong>Push and integrity:</strong> FCM token, Firebase installation ID, Android platform, App Check tokens, and Play Integrity attestation material.</li>
         <li><strong>Technical service data:</strong> IP address, user agent, app ID and version, request time, server-function requests, errors, and security logs generated through Firebase and Google Cloud.</li>
@@ -283,7 +283,7 @@
 
     <section>
       <h2>4. Information shared with your connected partner</h2>
-      <p>Your chosen connected partner can receive your nickname and connection status, heart-card content, proposed dates and response state, confirmed shared events, locations and notes you enter, and preparation checklists. This sharing provides the core expression, agreement, and preparation features. Access ends immediately when the connection ends; shared server data is deleted after a seven-day deletion queue.</p>
+      <p>Your chosen connected partner can receive your nickname and connection status, heart-card content, response buttons and selection, shared events and anniversaries, locations and notes you enter, and preparation checklists. This sharing provides the core expression, response, shared-calendar, and preparation features. Access ends immediately when the connection ends; shared server data is deleted after a seven-day deletion queue.</p>
       <p>A heart-card message may be processed by the server and the recipient’s app before the recipient performs the scratch gesture; the gesture controls its reveal in the interface. Private care-card content and reminders are not sent to the partner. We do not sell personal information. We may disclose the minimum information required by a valid legal demand.</p>
     </section>
 
@@ -305,7 +305,7 @@
       <h2>7. Retention and deletion</h2>
       <ul>
         <li>Profile, safety settings, and registered device tokens are kept until account deletion. Block records remain until you unblock the user or delete the account.</li>
-        <li>Active couple data, heart cards, events, and checklists become inaccessible immediately after disconnection, blocking, or account deletion and are deleted from the active database after seven days.</li>
+        <li>Active couple data, heart cards, events, anniversaries, and checklists become inaccessible immediately after disconnection, blocking, or account deletion and are deleted from the active database after seven days.</li>
         <li>An invitation becomes unusable after 24 hours or one use. At present, its record remains until the creating user deletes the account. Only a secret-peppered hash, not the raw code, is stored.</li>
         <li>Local data remains until you delete an item, disconnect where applicable, delete the account or app data, or uninstall. Backup copies follow the backup provider’s policy.</li>
         <li>An unencrypted export ZIP is created in app cache and may remain until the operating system or app cache removes it. Copies saved or sent elsewhere remain under your control and the selected provider’s policy.</li>
@@ -316,7 +316,7 @@
 
     <section>
       <h2>8. Export and account deletion</h2>
-      <p>“Data &amp; Safety → Export data” creates a ZIP containing JSON and CSV versions of your private care cards, profile, and currently accessible shared cards, events, and checklists. The file is created in temporary device storage and passed to the Android share sheet; Dailmi does not separately receive it. <strong>The ZIP is not encrypted.</strong></p>
+      <p>“Data &amp; Safety → Export data” creates a ZIP containing JSON and CSV versions of your private care cards, profile, and currently accessible shared cards, events, anniversaries, and checklists. The file is created in temporary device storage and passed to the Android share sheet; Dailmi does not separately receive it. <strong>The ZIP is not encrypted.</strong></p>
       <p>“Data &amp; Safety → Permanently delete account” requires Google reauthentication. It starts immediate removal of the profile, registered-device records, and Firebase Authentication account from active systems, immediately ends the connection, schedules shared data for deletion after seven days, and clears Majumaum local data and private reminders. Files you exported, copies independently saved by the partner, operating-system backups, and provider retention required by law or backup cycles are not directly erased by the app.</p>
     </section>
 
