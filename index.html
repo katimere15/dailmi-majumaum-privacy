@@ -77,14 +77,14 @@
 <main>
   <header>
     <h1>마주마음 개인정보처리방침</h1>
-    <p class="meta">운영자: Dailmi · 앱: 마주마음(Majumaum) · Android 패키지: <code>com.dailmi.majumaum</code><br>시행일: 2026년 10월 1일 · 최종 수정일: 2026년 10월 2일</p>
+    <p class="meta">운영자: Dailmi · 앱: 마주마음(Majumaum) · Android 패키지: <code>com.dailmi.majumaum</code><br>시행일: 2026년 10월 1일 · 최종 수정일: 2026년 10월 12일</p>
     <nav class="languages" aria-label="언어 선택"><a href="#korean">한국어</a><a href="#english">English</a></nav>
   </header>
 
   <div class="notice">
     <strong>한눈에 보기</strong>
-    <p><span class="badge">개인 배려카드는 기기 우선 저장</span><span class="badge">공유 데이터는 Firebase 저장</span><span class="badge">광고·분석 SDK 없음</span></p>
-    <p>개인 배려카드의 제목·메모·상기 설정은 마주마음 서버로 전송하지 않습니다. 연인 연결 뒤 보낸 마음카드와 답변, 공유 일정·기념일과 준비 체크리스트는 두 사람이 함께 사용하도록 서버에 저장합니다. 공유 데이터는 전송 및 저장 과정에서 암호화되지만 현재 종단간 암호화 방식은 아닙니다.</p>
+    <p><span class="badge">개인 배려카드는 기기 우선 저장</span><span class="badge">공유 데이터는 Firebase 저장</span><span class="badge">홈 최하단 배너 광고</span></p>
+    <p>개인 배려카드의 제목·메모·상기 설정은 마주마음 서버로 전송하지 않습니다. 연인 연결 뒤 보낸 오늘의 한마디, 마음카드와 답변, 공유 일정·기념일과 준비 체크리스트는 두 사람이 함께 사용하도록 서버에 저장합니다. 공유 데이터는 전송 및 저장 과정에서 암호화되지만 현재 종단간 암호화 방식은 아닙니다.</p>
     <p>계정을 삭제하면 프로필과 등록 기기 데이터는 운영 데이터베이스에서 즉시 삭제되고, 연결된 두 사람의 공유 데이터는 접근이 즉시 중단된 뒤 7일 후 삭제됩니다. 데이터 내보내기 ZIP은 암호화되지 않으므로 저장·공유 위치를 주의해서 선택해야 합니다.</p>
   </div>
 
@@ -92,7 +92,7 @@
     <section>
       <h2>1. 개인정보처리자와 적용 범위</h2>
       <p>Dailmi(이하 “운영자”)는 개인정보 보호법 제30조에 따라 마주마음 앱에서 개인정보가 어떻게 처리되는지 안내하기 위해 이 방침을 공개합니다. 이 방침은 마주마음 Android 앱과 앱 운영을 위한 Firebase 백엔드에 적용됩니다.</p>
-      <p>마주마음은 대한민국을 첫 서비스 국가로 하며, 일반 채팅·실시간 위치 공유·연락처 수집 기능을 제공하지 않습니다. 앱에 Firebase Analytics, Crashlytics 또는 광고 SDK를 포함하지 않습니다.</p>
+      <p>마주마음은 대한민국을 첫 서비스 국가로 하며, 일반 채팅·실시간 위치 공유·연락처 수집 기능을 제공하지 않습니다. 앱은 홈 화면 최하단의 인라인 배너를 위해 Google Mobile Ads SDK를 포함하지만 Firebase Analytics와 Crashlytics는 사용하지 않습니다.</p>
     </section>
 
     <section>
@@ -104,11 +104,13 @@
           <tr><td>마주마음 프로필</td><td>별명, 계정 생성·수정 시각, 현재 커플 연결 ID</td><td>연인 연결, 상대 표시명 제공과 서비스 상태 유지</td><td>별명은 사용자가 입력. 계정 기반 기능 이용에 필수</td></tr>
           <tr><td>개인 배려카드</td><td>분류, 제목, 메모, 만든·수정한 시각, 다시 떠올릴 시점과 1회·주간·월간·연간 반복 설정</td><td>작성자 개인의 기억 보조와 로컬 알림</td><td>사용자가 선택 입력. 앱 전용 저장소에 보관하며 마주마음 서버로 전송하지 않음</td></tr>
           <tr><td>커플 연결·초대</td><td>두 사용자의 UID와 별명, 연결 상태·시각, 원문 초대 코드의 비밀값 결합 해시, 초대 생성자, 만료·사용 시각과 시도 횟수</td><td>정확히 두 사람 연결, 24시간·1회용 초대 검증과 재연결 제어</td><td>초대 생성·입력 때 처리. 공유 기능 이용 시 필요</td></tr>
+          <tr><td>오늘의 한마디</td><td>작성자 UID와 별명, 날짜, 최대 50자의 문구, 생성·수정 시각</td><td>연결된 두 사람이 하루 한 문장씩 공유하고 홈에서 확인</td><td>사용자가 작성·수정. 공유 기능 이용 시 선택</td></tr>
           <tr><td>마음카드·응답</td><td>발신·수신자 UID와 별명, 카드 문구, 발신자가 정한 최대 3개 답변 버튼과 수신자의 선택, 생성·공개·응답 시각. 기존 카드의 후보·대체 날짜와 응답 상태</td><td>마음카드 전달, 긁어보기 화면과 응답 제공</td><td>사용자가 작성·응답. 공유 기능 이용 시 선택</td></tr>
           <tr><td>공유 일정·기념일·준비</td><td>일정 제목, 날짜·시각, 사용자가 직접 입력한 장소 문구, 메모, 상태, 작성자, 기념일 이름·기준 날짜·메모, 준비 항목·담당자·완료 여부와 관련 시각</td><td>합의형 공유 캘린더, 매년 반복 기념일과 준비 체크리스트 제공</td><td>사용자가 작성·수정. 공유 기능 이용 시 선택. 기기 위치정보는 수집하지 않음</td></tr>
           <tr><td>안전 설정</td><td>마음카드 수신 중지 여부, 차단한 사용자 UID와 당시 별명, 연결 해제·삭제 예약 시각</td><td>수신 제어, 차단과 연결 종료, 공유 데이터 삭제</td><td>사용자의 설정·차단·연결 해제 동작으로 수집</td></tr>
           <tr><td>푸시·앱 무결성</td><td>FCM 등록 토큰과 Firebase 설치 식별자, 플랫폼(Android), App Check 토큰과 Play Integrity 검증 자료</td><td>일반 문구 푸시 전달, 위조 앱·비정상 요청 방지</td><td>로그인 뒤 자동 처리. 알림 표시 권한은 사용자가 Android 설정에서 거부·변경 가능</td></tr>
           <tr><td>서비스 기술 정보</td><td>IP 주소, 사용자 에이전트, 앱 ID·버전, 요청 시각, 서버 함수 요청·오류와 보안 로그</td><td>통신, 장애 대응, 보안과 부정 이용 방지</td><td>Firebase·Google Cloud 이용 과정에서 자동 생성</td></tr>
+          <tr><td>광고 기술 정보</td><td>IP 주소에서 추정되는 대략적 위치, 앱 실행·광고 노출·탭·동영상 조회 등 제품 상호작용, SDK·앱 성능 및 진단 정보, 앱 세트 ID와 기기·계정 관련 식별자</td><td>홈 하단 배너 광고 제공·측정, 분석과 광고 부정행위 방지</td><td>Google Mobile Ads SDK가 광고 표시 과정에서 자동 처리. Android 광고 ID 권한은 앱에서 제거함</td></tr>
           <tr><td>이메일 문의</td><td>이메일 주소, 문의 내용과 사용자가 선택하여 첨부한 자료</td><td>문의 답변, 권리 요청과 분쟁 처리</td><td>사용자가 이메일을 보낼 때 수집. 문의에 불필요한 민감정보는 보내지 말 것</td></tr>
         </tbody>
       </table></div>
@@ -127,7 +129,7 @@
       <p>마주마음은 사용자가 직접 선택한 한 명의 연인과 공유 기능을 제공하기 위해 다음 정보를 그 상대에게 공개합니다.</p>
       <div class="scroll"><table>
         <thead><tr><th>받는 사람</th><th>공개 항목</th><th>목적</th><th>보유·이용 기간</th></tr></thead>
-        <tbody><tr><td>사용자가 초대하거나 초대를 수락해 연결한 연인 1명</td><td>별명과 연결 상태, 보낸 마음카드 문구·답변 버튼·선택·공개 및 응답 상태, 공유 일정과 기념일, 장소·메모와 준비 체크리스트</td><td>두 사람의 마음 표현, 응답, 공동 준비와 일정·기념일 관리</td><td>앱에서 연결되어 있는 동안. 연결 종료 시 즉시 접근 중단하며 서버 공유 데이터는 7일 후 삭제</td></tr></tbody>
+        <tbody><tr><td>사용자가 초대하거나 초대를 수락해 연결한 연인 1명</td><td>별명과 연결 상태, 오늘의 한마디, 보낸 마음카드 문구·답변 버튼·선택·공개 및 응답 상태, 공유 일정과 기념일, 장소·메모와 준비 체크리스트</td><td>두 사람의 마음 표현, 응답, 공동 준비와 일정·기념일 관리</td><td>앱에서 연결되어 있는 동안. 연결 종료 시 즉시 접근 중단하며 서버 공유 데이터는 7일 후 삭제</td></tr></tbody>
       </table></div>
       <p>마음카드 문구는 상대가 긁기 동작을 하기 전부터 전달을 위해 서버와 상대 앱에 처리될 수 있고, 긁기 동작은 화면에서 내용을 공개하는 사용자 경험입니다. 개인 배려카드 원문과 개인 알림은 연인에게 보내지 않습니다.</p>
       <p>법령에 특별한 규정이 있거나 수사기관·법원이 적법한 절차에 따라 요구하는 경우에는 필요한 범위에서 정보를 제공할 수 있습니다. 운영자는 개인정보를 판매하지 않습니다.</p>
@@ -139,6 +141,7 @@
         <thead><tr><th>수탁자</th><th>위탁 업무</th><th>관련 서비스</th></tr></thead>
         <tbody>
           <tr><td>Google LLC 및 Google Cloud 계약상 하위처리자</td><td>Google 로그인, 사용자 인증, 데이터베이스·서버 함수 운영, 푸시 알림, 앱·기기 무결성 확인, 기술 인프라·보안·지원</td><td>Google Sign-In, Firebase Authentication, Cloud Firestore, Cloud Functions for Firebase, Firebase Cloud Messaging, Firebase App Check, Play Integrity</td></tr>
+          <tr><td>Google LLC 및 광고 기술 제공자</td><td>배너 광고 제공·측정, 광고 관련 분석과 부정행위 방지</td><td>Google Mobile Ads SDK·AdMob</td></tr>
           <tr><td>GitHub, Inc.</td><td>개인정보처리방침 웹페이지 호스팅, 접속 보안과 장애 대응</td><td>GitHub Pages</td></tr>
         </tbody>
       </table></div>
@@ -153,6 +156,7 @@
         <tbody>
           <tr><td>Google LLC<br><a href="https://firebase.google.com/support/privacy/dpo">Firebase 개인정보 문의</a></td><td>미국<br><span class="fine">Firebase Authentication은 미국 데이터센터에서만 처리</span></td><td>Google 계정 이메일과 제공되는 기본 프로필, Firebase UID, 인증·보안 정보, IP 주소와 사용자 에이전트</td><td>로그인, 재인증과 계정 관리 시 암호화된 네트워크로 전송</td><td>인증·계정 관리와 부정 이용 방지. IP 로그는 수 주, 그 밖의 인증 정보는 계정 삭제 요청 뒤 운영·백업 시스템에서 최대 180일 이내 제거</td></tr>
           <tr><td>Google LLC 및 <a href="https://cloud.google.com/terms/subprocessors?hl=ko">Google Cloud 하위처리자</a><br><a href="https://firebase.google.com/support/privacy/dpo">문의처</a></td><td>미국을 포함해 Google 또는 하위처리자가 시설을 운영하는 국가<br><span class="fine">현재 국가 목록은 연결된 하위처리자 목록에서 확인</span></td><td>Firebase 설치 식별자와 FCM 토큰, App Check·Play Integrity 검증 자료와 토큰, IP 주소, 앱·기기·요청 기술 정보. 지원·보안 업무에 필요한 범위의 고객 데이터</td><td>앱 사용, 푸시 등록·전달, 보호된 서버 요청과 기술 지원 시 암호화된 네트워크로 전송 또는 원격 접근</td><td>푸시 전달, 앱 무결성, 보안과 인프라 운영. App Check 검증 자료는 App Check가 보관하지 않으며 토큰 유효기간은 최대 7일(재사용 방지 사용 시 최대 30일). Firebase 설치 식별자는 삭제 API 요청 뒤 운영·백업 시스템에서 최대 180일 이내 제거. 그 밖의 정보는 서비스 제공 또는 법적 의무에 필요한 기간</td></tr>
+          <tr><td>Google LLC 및 Google이 사용하는 광고 기술 제공자<br><a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a></td><td>미국을 포함해 Google 또는 광고 기술 제공자가 시설을 운영하는 국가</td><td>IP 주소와 그로부터 추정되는 대략적 위치, 광고·앱 상호작용, 진단 정보, 앱 세트 ID와 기기·계정 관련 식별자. Android 광고 ID는 앱 권한에서 제거</td><td>홈 하단 광고를 요청·표시·측정할 때 암호화된 네트워크로 자동 전송</td><td>광고 제공·측정, 분석과 부정행위 방지. 보유 기간은 Google 및 적용되는 광고 기술 제공자의 정책에 따름</td></tr>
           <tr><td>GitHub, Inc.<br><a href="https://docs.github.com/ko/site-policy/privacy-policies/github-general-privacy-statement">GitHub 개인정보처리방침</a></td><td>미국 등 GitHub가 시설 또는 서비스 제공자를 운영하는 국가</td><td>정책 페이지 방문자의 IP 주소, 사용자 에이전트, 요청 시각 등 접속·보안 기술 정보</td><td>정책 페이지 접속 시 암호화된 네트워크로 자동 전송</td><td>GitHub Pages 제공, 보안과 장애 대응. GitHub 정책과 법적 의무에 따른 기간</td></tr>
         </tbody>
       </table></div>
@@ -166,7 +170,7 @@
         <thead><tr><th>정보</th><th>보유 기간</th><th>파기 방법</th></tr></thead>
         <tbody>
           <tr><td>프로필·안전 설정·서버 기기 토큰</td><td>계정 삭제 때까지. 차단 목록은 사용자가 차단을 해제하거나 계정을 삭제할 때까지</td><td>Firestore 문서와 하위 기기 문서 삭제</td></tr>
-          <tr><td>활성 커플 연결, 마음카드, 공유 일정·기념일·체크리스트</td><td>연결 해제·차단·계정 삭제 시 접근을 즉시 차단하고 7일간 삭제 대기 후 운영 데이터베이스에서 삭제</td><td>예약 서버 작업으로 커플 문서와 하위 공유 문서를 재귀 삭제</td></tr>
+          <tr><td>활성 커플 연결, 오늘의 한마디, 마음카드, 공유 일정·기념일·체크리스트</td><td>연결 해제·차단·계정 삭제 시 접근을 즉시 차단하고 7일간 삭제 대기 후 운영 데이터베이스에서 삭제</td><td>예약 서버 작업으로 커플 문서와 하위 공유 문서를 재귀 삭제</td></tr>
           <tr><td>초대 기록</td><td>초대 코드는 24시간 또는 1회 사용 뒤 더 이상 사용할 수 없음. 현재 초대 레코드는 생성한 사용자의 계정 삭제 때까지 보관</td><td>계정 삭제 시 해당 사용자가 생성한 초대 문서 삭제. 원문 코드는 저장하지 않고 비밀값을 결합한 해시만 저장</td></tr>
           <tr><td>기기 내 개인 배려카드·공유 캐시·온보딩 상태</td><td>사용자가 개별 삭제, 연결 해제, 계정 삭제 또는 앱 데이터 삭제·앱 제거를 할 때까지. Android 백업에 남은 사본은 백업 제공자의 정책을 따름</td><td>앱 전용 저장소의 값과 예약 알림 삭제</td></tr>
           <tr><td>내보내기 임시 ZIP</td><td>공유 메뉴 호출을 위해 앱 캐시에 생성되며 운영체제 또는 앱 캐시 정리 때까지 남을 수 있음. 사용자가 외부에 저장·전송한 사본은 선택한 위치에 남음</td><td>운영체제 캐시 정리 또는 사용자가 저장·공유 위치에서 직접 삭제</td></tr>
@@ -180,10 +184,10 @@
     <section>
       <h2>8. 데이터 내보내기와 계정 삭제</h2>
       <h3>데이터 내보내기</h3>
-      <p>앱의 “데이터와 안전 → 데이터 내보내기”에서 개인 배려카드, 프로필과 현재 접근 가능한 마음카드·일정·기념일·체크리스트를 JSON과 CSV가 포함된 ZIP으로 만들 수 있습니다. 파일은 기기 임시 저장소에서 생성되고 Android 공유 메뉴로 전달되며 운영자는 내보낸 파일을 별도로 수신하지 않습니다.</p>
+      <p>앱의 “설정 → 데이터 내보내기”에서 개인 배려카드, 프로필과 현재 접근 가능한 오늘의 한마디·마음카드·일정·기념일·체크리스트를 JSON과 CSV가 포함된 ZIP으로 만들 수 있습니다. 파일은 기기 임시 저장소에서 생성되고 Android 공유 메뉴로 전달되며 운영자는 내보낸 파일을 별도로 수신하지 않습니다.</p>
       <p><strong>ZIP은 암호화되지 않습니다.</strong> 이메일, 클라우드 드라이브, 메신저 등 사용자가 선택한 외부 앱이나 저장소는 각자의 방침에 따라 파일을 처리합니다. 공유를 마친 뒤 앱 캐시와 외부 저장 위치의 사본을 직접 관리해 주세요.</p>
       <h3>계정 삭제</h3>
-      <p>“데이터와 안전 → 계정 영구 삭제”에서 Google 재인증 후 삭제할 수 있습니다. 서버 프로필·등록 기기와 Firebase Authentication 계정은 삭제 요청 즉시 운영 시스템에서 삭제 절차를 시작합니다. 현재 연결은 즉시 종료되고 공유 데이터는 7일 후 삭제됩니다. 기기의 마주마음 로컬 데이터와 개인 알림도 지웁니다.</p>
+      <p>“설정 → 계정 영구 삭제”에서 Google 재인증 후 삭제할 수 있습니다. 서버 프로필·등록 기기와 Firebase Authentication 계정은 삭제 요청 즉시 운영 시스템에서 삭제 절차를 시작합니다. 현재 연결은 즉시 종료되고 공유 데이터는 7일 후 삭제됩니다. 기기의 마주마음 로컬 데이터와 개인 알림도 지웁니다.</p>
       <p>계정 삭제 전에 사용자가 외부로 내보낸 파일, 상대가 별도로 저장한 내용, 운영체제 백업, Google의 법정·백업 보관 범위는 앱에서 직접 삭제할 수 없습니다.</p>
     </section>
 
@@ -203,7 +207,8 @@
     <section>
       <h2>10. 자동 수집, 광고와 분석</h2>
       <p>Firebase 서비스 제공 과정에서 IP 주소, 사용자 에이전트, Firebase 설치 식별자, 앱 ID·버전, FCM 토큰, App Check 토큰과 무결성 검증 자료가 자동 처리될 수 있습니다. 이는 로그인, 통신, 푸시, 보안과 부정 이용 방지에 사용합니다.</p>
-      <p>마주마음 앱은 Firebase Analytics, Crashlytics, 광고 SDK, 광고 식별자 기반 타기팅, 위치 추적 또는 행동 프로파일링을 사용하지 않습니다. 개인 카드·마음카드·일정 내용을 광고나 분석 목적으로 사용하지 않습니다. 이 정책 HTML 자체에는 운영자가 설정한 쿠키, 추적 픽셀 또는 분석 스크립트가 없습니다. 정책 페이지는 GitHub Pages에서 제공되며 GitHub는 접속 보안과 서비스 제공을 위해 IP 주소, 사용자 에이전트와 요청 기록을 처리할 수 있습니다.</p>
+      <p>마주마음은 홈 화면 최하단의 인라인 배너를 위해 Google Mobile Ads SDK를 사용합니다. 이 SDK는 광고 제공·측정, 분석과 부정행위 방지를 위해 IP 주소와 그로부터 추정되는 대략적 위치, 앱 실행·광고 노출·탭·동영상 조회 같은 제품 상호작용, 진단 정보, 앱 세트 ID와 기기·계정 관련 식별자를 자동으로 수집·공유할 수 있습니다. 앱은 Android 광고 ID 권한을 제거했으며, 오늘의 한마디·개인 카드·마음카드·일정·기념일·연결 정보와 별명을 광고 요청이나 타기팅에 사용하지 않습니다. Firebase Analytics와 Crashlytics, 기기 위치 추적은 사용하지 않습니다.</p>
+      <p>비공개 테스트 빌드는 Google의 공식 테스트 광고 ID를 사용하며 광고 노출·클릭 수익을 발생시키지 않습니다. 실서비스 광고를 활성화하기 전 실제 AdMob 설정과 동의 요구사항, Google Play 데이터 보안 양식을 다시 검토합니다. 이 정책 HTML 자체에는 운영자가 설정한 쿠키, 추적 픽셀 또는 분석 스크립트가 없습니다. 정책 페이지는 GitHub Pages에서 제공되며 GitHub는 접속 보안과 서비스 제공을 위해 IP 주소, 사용자 에이전트와 요청 기록을 처리할 수 있습니다.</p>
     </section>
 
     <section>
@@ -213,15 +218,15 @@
         <li>Cloud Functions를 통해 공유 데이터 변경 권한과 입력 길이·상태 전이를 검증합니다.</li>
         <li>Firebase는 지원 서비스의 데이터를 HTTPS로 전송하고 Firestore·Authentication·Functions·FCM·App Check 데이터를 저장 시 암호화한다고 안내합니다.</li>
         <li>초대 코드 원문 대신 서버 비밀값을 결합한 해시를 저장합니다.</li>
-        <li>푸시 알림에는 마음카드 원문, 개인 메모와 상세 일정 정보를 넣지 않습니다.</li>
+        <li>푸시 알림에는 오늘의 한마디·마음카드 원문, 개인 메모와 상세 일정 정보를 넣지 않습니다.</li>
       </ul>
-      <p><strong>마음카드와 공유 일정에는 현재 종단간 암호화를 적용하지 않습니다.</strong> 따라서 서비스 제공에 필요한 서버 처리와 권한 있는 운영 환경의 접근 가능성이 있습니다. 또한 개인 배려카드는 앱 전용 영역에 저장하지만 별도의 사용자 비밀번호 기반 파일 암호화는 적용하지 않습니다. 기기 잠금과 운영체제 보안 기능을 함께 사용해 주세요.</p>
+      <p><strong>오늘의 한마디·마음카드와 공유 일정에는 현재 종단간 암호화를 적용하지 않습니다.</strong> 따라서 서비스 제공에 필요한 서버 처리와 권한 있는 운영 환경의 접근 가능성이 있습니다. 또한 개인 배려카드는 앱 전용 영역에 저장하지만 별도의 사용자 비밀번호 기반 파일 암호화는 적용하지 않습니다. 기기 잠금과 운영체제 보안 기능을 함께 사용해 주세요.</p>
     </section>
 
     <section>
       <h2>12. 민감정보와 자유 입력란</h2>
       <p>마주마음은 건강, 사상·신념, 성생활 등 법령상 민감정보의 입력을 요구하지 않습니다. 그러나 사용자가 카드나 메모의 자유 입력란에 그러한 내용을 직접 적을 수 있습니다. 서비스 이용에 불필요한 민감정보, 주민등록번호, 계정 비밀번호, 금융 인증정보 또는 제3자의 비밀을 입력하지 마세요.</p>
-      <p>개인 배려카드는 상대에게 자동 공개되지 않지만 마음카드·공유 일정·체크리스트에 입력한 내용은 연결한 연인에게 공개됩니다. 보내기 전에 공개 범위를 확인해 주세요.</p>
+      <p>개인 배려카드는 상대에게 자동 공개되지 않지만 오늘의 한마디·마음카드·공유 일정·체크리스트에 입력한 내용은 연결한 연인에게 공개됩니다. 보내기 전에 공개 범위를 확인해 주세요.</p>
     </section>
 
     <section>
@@ -250,12 +255,12 @@
   <div id="english" lang="en">
     <div class="notice plain">
       <strong>English summary</strong>
-      <p>Private care-card content and reminder settings are stored primarily on your device and are not sent to Majumaum servers. Heart cards and responses, shared events, anniversaries, and preparation checklists are stored in Firebase so that the connected couple can use them together. Shared data is encrypted in transit and at rest by the provider, but it is not currently end-to-end encrypted. Exported ZIP files are not encrypted.</p>
+      <p>Private care-card content and reminder settings are stored primarily on your device and are not sent to Majumaum servers. Daily messages, heart cards and responses, shared events, anniversaries, and preparation checklists are stored in Firebase so that the connected couple can use them together. Shared data is encrypted in transit and at rest by the provider, but it is not currently end-to-end encrypted. Exported ZIP files are not encrypted.</p>
     </div>
 
     <section>
       <h2>1. Controller and scope</h2>
-      <p>Dailmi (“we”) publishes this Privacy Policy to explain how the Majumaum Android app and its Firebase backend process personal information. Majumaum launches first in South Korea and does not provide general chat, real-time location sharing, or contact collection. The app does not include Firebase Analytics, Crashlytics, or an advertising SDK.</p>
+      <p>Dailmi (“we”) publishes this Privacy Policy to explain how the Majumaum Android app and its Firebase backend process personal information. Majumaum launches first in South Korea and does not provide general chat, real-time location sharing, or contact collection. The app uses Google Mobile Ads SDK for one inline banner at the bottom of Home, but does not include Firebase Analytics or Crashlytics.</p>
     </section>
 
     <section>
@@ -265,11 +270,13 @@
         <li><strong>Profile:</strong> nickname, account timestamps, and current couple-connection ID.</li>
         <li><strong>Private care cards:</strong> category, title, note, timestamps, reminder time, and one-time, weekly, monthly, or yearly recurrence. These stay in app-private local storage and are not uploaded to Majumaum servers.</li>
         <li><strong>Connection and invitations:</strong> both users’ UIDs and nicknames, connection state and timestamps, a secret-peppered hash of the invitation code, creator, expiry, use time, and attempt count. The raw invitation code is not stored.</li>
+        <li><strong>Daily messages:</strong> author UID and nickname, date, message of up to 50 characters, and creation and update timestamps.</li>
         <li><strong>Heart cards and responses:</strong> sender and recipient identifiers and names, message, up to three sender-defined response buttons, the recipient’s selection, reveal and response status, and relevant timestamps. Legacy cards may retain proposed or alternative dates and their response status.</li>
         <li><strong>Shared calendar, anniversaries, and preparation:</strong> event title, date and time, text location entered by a user, note, status, creator, anniversary title, reference date and note, and checklist content, assignee, completion status, and timestamps. Majumaum does not collect device geolocation.</li>
         <li><strong>Safety settings:</strong> reception pause, blocked user ID and nickname, disconnection status, and scheduled deletion time.</li>
         <li><strong>Push and integrity:</strong> FCM token, Firebase installation ID, Android platform, App Check tokens, and Play Integrity attestation material.</li>
         <li><strong>Technical service data:</strong> IP address, user agent, app ID and version, request time, server-function requests, errors, and security logs generated through Firebase and Google Cloud.</li>
+        <li><strong>Advertising technical data:</strong> approximate location inferred from IP address, app and ad interactions such as launches, impressions, taps and video views, diagnostic information, app set ID, and device or account-related identifiers processed by Google Mobile Ads for ad delivery, measurement, analytics, and fraud prevention. The app removes the Android advertising-ID permission.</li>
         <li><strong>Support:</strong> your email address, message, and attachments you choose to send.</li>
       </ul>
       <p>Account and profile information is required for account-based features. Refusing it prevents sign-in and couple sharing. Other content is provided when you choose to use its feature.</p>
@@ -283,19 +290,20 @@
 
     <section>
       <h2>4. Information shared with your connected partner</h2>
-      <p>Your chosen connected partner can receive your nickname and connection status, heart-card content, response buttons and selection, shared events and anniversaries, locations and notes you enter, and preparation checklists. This sharing provides the core expression, response, shared-calendar, and preparation features. Access ends immediately when the connection ends; shared server data is deleted after a seven-day deletion queue.</p>
+      <p>Your chosen connected partner can receive your nickname and connection status, daily message, heart-card content, response buttons and selection, shared events and anniversaries, locations and notes you enter, and preparation checklists. This sharing provides the core expression, response, shared-calendar, and preparation features. Access ends immediately when the connection ends; shared server data is deleted after a seven-day deletion queue.</p>
       <p>A heart-card message may be processed by the server and the recipient’s app before the recipient performs the scratch gesture; the gesture controls its reveal in the interface. Private care-card content and reminders are not sent to the partner. We do not sell personal information. We may disclose the minimum information required by a valid legal demand.</p>
     </section>
 
     <section>
       <h2>5. Service providers</h2>
-      <p>Google LLC and its Google Cloud contractual subprocessors provide Google Sign-In, Firebase Authentication, Cloud Firestore, Cloud Functions for Firebase, Firebase Cloud Messaging, Firebase App Check, Play Integrity, infrastructure, security, and technical support. The current list is available at <a href="https://cloud.google.com/terms/subprocessors">Google Cloud Subprocessors</a>. GitHub, Inc. provides this policy page through GitHub Pages and may process visitor IP addresses, user agents, request timestamps, and related access or security information.</p>
+      <p>Google LLC and its Google Cloud contractual subprocessors provide Google Sign-In, Firebase Authentication, Cloud Firestore, Cloud Functions for Firebase, Firebase Cloud Messaging, Firebase App Check, Play Integrity, infrastructure, security, and technical support. Google LLC and applicable ad technology providers provide and measure the Home banner through Google Mobile Ads SDK and AdMob, perform advertising analytics, and prevent fraud. The current Cloud list is available at <a href="https://cloud.google.com/terms/subprocessors">Google Cloud Subprocessors</a>. GitHub, Inc. provides this policy page through GitHub Pages and may process visitor IP addresses, user agents, request timestamps, and related access or security information.</p>
     </section>
 
     <section>
       <h2>6. International processing</h2>
       <p>Firebase Authentication runs only in U.S. data centers. Google LLC processes Google account identifiers and basic profile data, Firebase UID, authentication and security information, IP addresses, and user agents in the United States when you sign in, reauthenticate, or manage the account over encrypted connections. Google states that Authentication IP logs are kept for a few weeks and other authentication data is removed from live and backup systems within 180 days after customer-initiated user deletion.</p>
       <p>FCM, App Check, and Google Cloud operational or support data may be processed in the United States and other countries where Google or its subprocessors operate facilities. This may include Firebase installation IDs, FCM tokens, attestation material and tokens, IP addresses, and app, device, request, and security information. App Check does not retain attestation material; its tokens have a maximum seven-day TTL, or may be kept for up to 30 days when replay protection is used. Google states that Firebase installation IDs are removed from live and backup systems within 180 days after the relevant deletion API call.</p>
+      <p>Google LLC and applicable ad technology providers may process advertising technical data in the United States and other countries where they operate when the Home banner is requested, displayed, or measured. This may include IP-derived approximate location, ad and app interactions, diagnostics, app set ID, and device or account-related identifiers. The Android advertising-ID permission is removed. Retention follows Google’s and the applicable providers’ policies.</p>
       <p>When you visit this policy page, GitHub, Inc. may process IP addresses, user agents, request timestamps, and access or security information in the United States and other locations where it or its providers operate. Processing occurs automatically over encrypted connections to provide GitHub Pages, security, and reliability, and follows the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
       <p>Primary shared content in Cloud Firestore and Cloud Functions execution are configured for the Seoul, South Korea region <code>asia-northeast3</code>. Firebase may nevertheless process technical information through global infrastructure and support operations.</p>
       <p>You may refuse international processing by not installing or signing in, or by deleting the account after sign-up. Because this processing is necessary for current authentication and shared features, refusing it means those features cannot be used. See <a href="https://firebase.google.com/support/privacy/dpo">Firebase privacy inquiries</a>.</p>
@@ -305,7 +313,7 @@
       <h2>7. Retention and deletion</h2>
       <ul>
         <li>Profile, safety settings, and registered device tokens are kept until account deletion. Block records remain until you unblock the user or delete the account.</li>
-        <li>Active couple data, heart cards, events, anniversaries, and checklists become inaccessible immediately after disconnection, blocking, or account deletion and are deleted from the active database after seven days.</li>
+        <li>Active couple data, daily messages, heart cards, events, anniversaries, and checklists become inaccessible immediately after disconnection, blocking, or account deletion and are deleted from the active database after seven days.</li>
         <li>An invitation becomes unusable after 24 hours or one use. At present, its record remains until the creating user deletes the account. Only a secret-peppered hash, not the raw code, is stored.</li>
         <li>Local data remains until you delete an item, disconnect where applicable, delete the account or app data, or uninstall. Backup copies follow the backup provider’s policy.</li>
         <li>An unencrypted export ZIP is created in app cache and may remain until the operating system or app cache removes it. Copies saved or sent elsewhere remain under your control and the selected provider’s policy.</li>
@@ -316,8 +324,8 @@
 
     <section>
       <h2>8. Export and account deletion</h2>
-      <p>“Data &amp; Safety → Export data” creates a ZIP containing JSON and CSV versions of your private care cards, profile, and currently accessible shared cards, events, anniversaries, and checklists. The file is created in temporary device storage and passed to the Android share sheet; Dailmi does not separately receive it. <strong>The ZIP is not encrypted.</strong></p>
-      <p>“Data &amp; Safety → Permanently delete account” requires Google reauthentication. It starts immediate removal of the profile, registered-device records, and Firebase Authentication account from active systems, immediately ends the connection, schedules shared data for deletion after seven days, and clears Majumaum local data and private reminders. Files you exported, copies independently saved by the partner, operating-system backups, and provider retention required by law or backup cycles are not directly erased by the app.</p>
+      <p>“Settings → Export data” creates a ZIP containing JSON and CSV versions of your private care cards, profile, and currently accessible daily messages, shared cards, events, anniversaries, and checklists. The file is created in temporary device storage and passed to the Android share sheet; Dailmi does not separately receive it. <strong>The ZIP is not encrypted.</strong></p>
+      <p>“Settings → Permanently delete account” requires Google reauthentication. It starts immediate removal of the profile, registered-device records, and Firebase Authentication account from active systems, immediately ends the connection, schedules shared data for deletion after seven days, and clears Majumaum local data and private reminders. Files you exported, copies independently saved by the partner, operating-system backups, advertising-provider records, and provider retention required by law or backup cycles are not directly erased by the app.</p>
     </section>
 
     <section>
@@ -329,18 +337,19 @@
     <section>
       <h2>10. Automatic data, advertising, and analytics</h2>
       <p>Firebase may automatically process IP addresses, user agents, Firebase installation IDs, app ID and version, FCM tokens, App Check tokens, and integrity material for authentication, communications, push delivery, security, and abuse prevention.</p>
-      <p>Majumaum does not use Firebase Analytics, Crashlytics, advertising SDKs, advertising-identifier targeting, location tracking, or behavioral profiling. Card and calendar content is not used for advertising or analytics. This policy HTML contains no first-party cookie, tracking pixel, or analytics script configured by Dailmi. GitHub Pages hosts this page, and GitHub may process IP addresses, user agents, and request logs for service delivery and security.</p>
+      <p>Majumaum uses Google Mobile Ads SDK for one inline banner at the bottom of Home. The SDK may automatically collect and share IP-derived approximate location, app and ad interactions, diagnostic information, app set ID, and device or account-related identifiers for ad delivery, measurement, analytics, and fraud prevention. Majumaum removes the Android advertising-ID permission and does not send nicknames, connection information, daily messages, private or shared cards, calendar events, anniversaries, or checklist content in ad requests or use that content for ad targeting. Firebase Analytics, Crashlytics, and device-location tracking are not used.</p>
+      <p>Closed-test builds use Google’s official test ad IDs and do not generate advertising revenue. Production AdMob settings, consent obligations, and the Google Play Data safety form will be reviewed before live ads are enabled. This policy HTML contains no first-party cookie, tracking pixel, or analytics script configured by Dailmi. GitHub Pages hosts this page, and GitHub may process IP addresses, user agents, and request logs for service delivery and security.</p>
     </section>
 
     <section>
       <h2>11. Security and encryption boundaries</h2>
       <p>We use Firebase Authentication, App Check, Firestore Security Rules, server-side authorization and validation, generic push text, and a secret-peppered invitation-code hash. Firebase states that supported service data is encrypted in transit with HTTPS and that Firestore, Authentication, Functions, FCM, and App Check data is encrypted at rest.</p>
-      <p><strong>Heart cards and shared events are not currently end-to-end encrypted.</strong> Server-side processing and access by an authorized operational environment remain technically possible. Private care cards use app-private local storage but are not protected by a separate user-password-based file encryption layer. Use a secure device lock.</p>
+      <p><strong>Daily messages, heart cards, and shared events are not currently end-to-end encrypted.</strong> Server-side processing and access by an authorized operational environment remain technically possible. Private care cards use app-private local storage but are not protected by a separate user-password-based file encryption layer. Use a secure device lock.</p>
     </section>
 
     <section>
       <h2>12. Sensitive free-text content</h2>
-      <p>Majumaum does not ask for legally sensitive data such as health, beliefs, or sexual-life information, but a user could enter such content in a free-text field. Do not enter unnecessary sensitive information, national identifiers, passwords, financial credentials, or another person’s secrets. Private care cards are not automatically shared, while content in heart cards, shared events, and checklists is disclosed to the connected partner.</p>
+      <p>Majumaum does not ask for legally sensitive data such as health, beliefs, or sexual-life information, but a user could enter such content in a free-text field. Do not enter unnecessary sensitive information, national identifiers, passwords, financial credentials, or another person’s secrets. Private care cards are not automatically shared, while content in daily messages, heart cards, shared events, and checklists is disclosed to the connected partner.</p>
     </section>
 
     <section>

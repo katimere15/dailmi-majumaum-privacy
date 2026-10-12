@@ -7,7 +7,7 @@
 - 공개 주소: https://katimere15.github.io/dailmi-majumaum-privacy/
 - 운영자: Dailmi
 - 개인정보 문의: `chyou960118@gmail.com`
-- 기준일: 2026-10-01
+- 기준일: 2026-10-12
 - 언어: 한국어 전체 본문과 영문 전체 번역
 
 현재 문서는 다음 실제 구현을 기준으로 작성했다.
@@ -19,7 +19,8 @@
 - FCM 푸시, Firebase App Check와 Play Integrity
 - 마음카드 수신 중지, 차단·연결 해제, 데이터 내보내기와 계정 삭제
 - 연결 종료 뒤 공유 데이터 접근 즉시 차단과 7일 삭제 대기
-- Firebase Analytics, Crashlytics와 광고 SDK 미사용
+- Firebase Analytics와 Crashlytics 미사용
+- 홈 최하단 Google Mobile Ads 인라인 배너 사용, Android 광고 ID 권한 제거와 커플 데이터 광고 미사용
 - 종단간 암호화는 아직 적용하지 않음
 
 ## 공개 전 필수 확인
