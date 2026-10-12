@@ -13,9 +13,10 @@
 현재 문서는 다음 실제 구현을 기준으로 작성했다.
 
 - Google 로그인과 Firebase Authentication
-- 서울 `asia-northeast3`의 Cloud Firestore·Cloud Functions
+- 서울 `asia-northeast3`의 Cloud Firestore·Cloud Functions와 Firebase Storage 사진 저장
 - Local-first 개인 배려카드와 기기 로컬 알림
 - 2인 연결, 마음카드, 날짜 합의, 공유 캘린더와 준비 체크리스트
+- `오늘의 우리` 하루 한 장 사진, `우리의 순간` 보관함, 단일 마음 반응과 Android 홈 위젯
 - FCM 푸시, Firebase App Check와 Play Integrity
 - 마음카드 수신 중지, 차단·연결 해제, 데이터 내보내기와 계정 삭제
 - 연결 종료 뒤 공유 데이터 접근 즉시 차단과 7일 삭제 대기
