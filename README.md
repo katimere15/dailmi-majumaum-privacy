@@ -21,7 +21,7 @@
 - 마음카드 수신 중지, 차단·연결 해제, 데이터 내보내기와 계정 삭제
 - 연결 종료 뒤 공유 데이터 접근 즉시 차단과 7일 삭제 대기
 - Firebase Analytics와 Crashlytics 미사용
-- 홈 최하단 Google Mobile Ads 인라인 배너 사용, Android 광고 ID 권한 제거와 커플 데이터 광고 미사용
+- 홈 최하단 Google Mobile Ads 제한 광고 배너 사용, Android·AdServices 광고 ID 권한 제거와 커플 데이터 광고 미사용
 - 종단간 암호화는 아직 적용하지 않음
 
 ## 공개 전 필수 확인
